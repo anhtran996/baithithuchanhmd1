@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    function insertNumberToArray(arr, x, index) {
+        if (index < 0 || index > arr.length) {
+            console.log(arr);
+        } else {
+            arr.splice(index, 0, x)
+            console.log(arr);
+        }
+    }
+
+
+    insertNumberToArray(arr, 55, -1)
+    insertNumberToArray(arr, 55, 15)
+    insertNumberToArray(arr, 55, 5)
+
+
+</script>
+</body>
+</html>
